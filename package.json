@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod --base-href \"https://yoshinari-sho.github.io/dobokulabprog/\"&& angular-cli-ghpages",
+    "build": "ng build --prod --base-href \"https://dobopro.github.io/DoboPro/\"&& angular-cli-ghpages",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
