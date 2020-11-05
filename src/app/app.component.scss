@@ -57,21 +57,23 @@ p {
   background-color: #f5f5f5;
 }
 
+
 .content-inner {
   max-width: 1200px;
   padding: 16px;
   margin: 0 auto;
   h2 {
-    font: calc(2.071em + 26 * (100vw - 375px) / 1305) Roboto, "Helvetica Neue", sans-serif;
+    font-size: calc(2.571em + 26 * (100vw - 375px) / 1305);
     letter-spacing: 0.06em;
     line-height: 2.09;
     text-align: center;
     color: #191970;
     font-weight: 900;
   }
-  p {
-    text-align: left;
+  >p {
+    text-align: center;
     letter-spacing: 1.6px;
+    font-size: calc(.071em + 26 * (100vw - 375px) / 1305);
   }
   ol {
     padding: 0 0 8px 32px;
@@ -621,4 +623,490 @@ div#slider figure {
     font-size: 16px;
     letter-spacing: 1.6px;
   }
+}
+
+
+
+
+
+
+.swiper-container {
+  height: 390px;
+}
+
+  .swiper-container .swiper-wrapper .swiper-slide img{
+      height: auto;
+  }
+
+.thumbnail_slider {
+height: 35px;
+width: 300px;
+}
+
+.thumbnail_slider .swiper-wrapper .swiper-slide {
+  height: 35px;
+  background-color: lightgrey;
+  vertical-align: middle;
+  position: relative;
+}
+
+.thumbnail_slider .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%)
+}
+
+.swiper-slide-thumb-active {
+  border: solid 3px red;
+}
+
+
+//valeur
+html {
+  width: 100%;
+}
+
+body{
+/* 基本のサイズを10pxに設定 */
+font-size: 20px;
+font-family:  "Noto sans JP";
+}
+
+.module_spacer__medium {
+  height: 50px;
+  width: 80%;
+}
+
+.module_spacer__small {
+  height: 35px;
+}
+
+.header_nav{
+background-color: #E60012;
+height: 50px;
+font-size: 16px;
+display: flex;
+align-items: center;
+}
+
+.header_logo{
+line-height: 16px;
+font-size: 13px;
+font-weight: 700;
+color: white;
+margin-left: 20px;
+}
+
+.icon_container{
+margin: 0 0 0 auto;
+}
+
+.humberger_tab, 
+.search_icon, 
+.favorite_icon,
+.shopping_cart_icon
+{
+color: white;
+}
+
+.humberger_tab {
+font-size: 20px;
+margin-left: 15px;
+}
+
+.search_icon,
+.favorite_icon,
+.shopping_cart_icon{
+  margin-right: 12px;
+  font-size: 20px;
+}
+
+ul.category_list{
+  height: 50px;
+  font-size: 12px;
+  line-height: 50px;
+  font-weight: 700;
+  text-align: center;
+  align-items: center;
+}
+
+  ul.category_list li{
+      display: inline-block;
+      margin-right: 60px;
+      font-weight: 700;
+  }
+
+.swiper-container {
+  height: 390px;
+}
+
+  .swiper-container .swiper-wrapper .swiper-slide img{
+      height: auto;
+  }
+
+.thumbnail_slider {
+height: 35px;
+width: 300px;
+}
+
+.thumbnail_slider .swiper-wrapper .swiper-slide {
+  height: 35px;
+  background-color: lightgrey;
+  vertical-align: middle;
+  position: relative;
+}
+
+.thumbnail_slider .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%)
+}
+
+.swiper-slide-thumb-active {
+  border: solid 3px red;
+}
+
+.product_introduction {
+  padding: 0px 200px 0px 200px;
+}
+
+.product_description{
+  width: 70%;
+}
+
+  .product_description h1, h3{
+      font-weight: bold;
+      line-height: 40px;
+  }
+
+  .product_description p {
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 21px;
+      color: #a09696;
+  }
+
+  .product_description p {
+      margin-top: 20px;
+      width: 800px;
+  }
+
+.product_info{
+  display: flex;
+  justify-content: space-between;
+}
+
+.p_small{
+font-size: 13px;
+}
+
+.product_description p {
+font-family: YakuHanJP, Roboto, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto sans JP", sans-serif;
+font-size: 14px;
+font-weight: 400;
+line-height: 21px;
+color: #a09696;
+margin-top: 25px;
+}
+
+.purchase_info{
+width: 280px;
+line-height: 20px;
+}
+
+.purchase_info h3{
+font-size: 21px;
+font-weight: 700;
+margin: 0px;
+}
+
+.purchase_info p{
+font-size: 12px;
+}
+
+.purchase_info span{
+  font-size: 10px;
+  line-height: 15px;
+  font-weight: 400;
+}
+
+.purchase_info img{
+margin-right: 5px;
+}
+
+.p_gray{
+color: #a09696
+}
+
+.p_black{
+color: black;
+}
+
+.purchase_button{
+  border: none;
+  background-color: red;
+  border-radius: 10px;
+  color: white;
+  width: 80%;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: center;
+  padding: 3px;
+}
+
+.favorite_button{
+  border: none;
+  border-radius: 10px;
+  width: 15%;
+  height: 42px;
+  font-size: 18px;
+  font-weight: 900;
+  color: #9F9596
+}
+
+.product_categories{
+  color: #231e1e;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15px;
+  height: 50px;
+  margin-top: 40px;
+}
+
+.category{
+padding: 10px;
+float: left;
+margin-right: 10px;
+background-color: #F0F0F0;
+border-radius: 10px;
+}
+
+.product_data{
+margin-top: 40px;
+}
+
+  .product_data .product_data_content {
+      color: black;
+      font-weight: 400;
+  }
+
+.product_caption{
+  margin-top: 30px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 21px;
+  color: #a09696;
+}
+
+  .product_caption p{
+      margin-top: 10px;
+  }
+
+.with_border {
+  border-bottom: 1px;
+  border-style: solid;
+  color: #F0F0F0;
+}
+
+table{
+border-collapse: collapse;
+border-spacing: 0;
+/* width: 65%; */
+border-top: solid 1.5px #eee;
+table-layout: fixed;
+}
+
+  table tr{
+      border-bottom: solid 1.5px #eee;
+      width: 10px;
+  }
+
+table td{
+  padding: 14px;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 600;
+  color: #a09696;
+  text-align: left;
+}
+
+.related_product{
+  margin-top: 20px;
+  width: 80%;
+}
+
+.related_products_gallary .swiper-slide_related_product  {
+  text-align: left;
+}
+
+.swiper-slide img{
+  justify-content: center;
+  height: 200px;
+}
+
+.slider2 {
+  width: 100%;
+  height: 300px;
+  vertical-align: center;
+  margin-top: 50px;
+}
+
+
+  .slider2 img{
+      display: block;
+      width: 200px;
+  }
+
+  .swiper-slide p{
+      font-size: 10px;
+      line-height: 18px;
+      margin: 0px;
+  }
+
+  .swiper-slide span{
+      font-weight: 800;
+  }
+
+  .related_product_name{
+      font-weight: 300;
+  }
+
+.image_container{
+  background-color: #F0F0F0;
+  height: 200px;
+  width: 200px;
+  vertical-align: middle;
+  position: relative
+}
+
+  .image_container img {
+      position: absolute;
+      top: 25%;
+  }
+
+.product_caution {
+  width: 80%;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 18px;
+  color: #a09696;
+}
+
+  .product_caution span {
+      text-decoration: underline;
+  }
+
+.product_copy_right {
+  text-align: center;
+  font-size: 10px;
+  line-height: 15px;
+  color: #a09696;
+}
+
+.category_nav {
+  font-size: 12px;
+  color: #a09696;
+  line-height: 40px;
+  border-bottom: 1px;
+  border-top: 1px;
+  border-style: solid;
+  border-color: #F0F0F0;
+}
+
+.recommend_container {
+  display: flex;
+}
+
+  .recommend_banner h1 {
+      font-size: 20px;
+      line-height: 40px;
+      font-weight: 900;
+  }
+
+.recommend_content {
+  margin-right: 20px;
+  width: 270px;
+}
+
+  .recommend_content img {
+      height: 150px;
+  }
+
+  .recommend_content p {
+      font-size: 10px;
+      line-height: 14px;
+      font-weight: 600;
+      margin-top: 5px;
+  }
+
+.software_category_list {
+  overflow: hidden;
+  margin: auto;
+  align-items: center;
+  position: relative;
+  border-top: solid 1px #F0F0F0;
+  border-bottom: solid 1px #F0F0F0;
+}
+
+  .software_category_list ul {
+      position: relative;
+      left: 25%;
+      float: left;
+  }
+
+      .software_category_list ul li {
+          float: left;
+          text-align: center;
+          font-size: 12px;
+          line-height: 40px;
+          margin: 0px 20px 0px 20px;
+      }
+
+.classification_list {
+  display: flex;
+  width: 100%;
+}
+
+  .classification_content {
+      width: 20%;
+  }
+
+  .classification_list p {
+      font-size: 10px;
+      line-height: 20px;
+  }
+
+  .classification_list ul {
+      margin-top: 15px;
+  }
+
+  .classification_list li {
+      color: #a09696;
+      font-size: 11px;
+      line-height: 20px;
+      font-weight: 500;
+  }
+
+.inquiry_list {
+  margin-top: 40px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 21px;
+  color: #a09696;
+}
+
+  .inquiry_list .policy_list {
+      font-size: 10px;
+      font-weight: lighter;
+      line-height: 50px;
+  }
+
+.copy_right {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  font-weight: 100;
 }
