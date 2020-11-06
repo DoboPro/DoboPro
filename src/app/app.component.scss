@@ -83,7 +83,7 @@ p {
 
 .content-inner {
   max-width: 1200px;
-  padding: 16px;
+  padding: 16px 4px;
   margin: 0 auto;
   h2 {
     font-size: calc(2.571em + 26 * (100vw - 375px) / 1305);
@@ -153,21 +153,7 @@ p {
   img.slice_jpg{
     width: auto;
   }
-  .menuTitle{
-    font-size: calc(2.571em + 26 * (100vw - 375px) / 1305);
-    letter-spacing: 0.06em;
-    line-height: 2.09;
-    text-align: center;
-    color: #191970;
-    font-weight: 900;
-  }
-  .jaTitle{
-    font-size: 48px;
-    text-align: center;
-    color: #0080ff;
-    margin-top: -18px;
-    margin-bottom: 16px;
-  }
+
 }
 
 .explain {
@@ -446,7 +432,7 @@ p{
 
 .text_content {
   padding: 16px 32px;
-  margin:0px 8px 16px;
+  margin:0px 0px 16px 0.7rem;
   font-size: 18px;
   font-stretch: semi-expanded;
   letter-spacing: 4px;
@@ -513,7 +499,6 @@ blockquote {
 .tytle_four {
   background: linear-gradient(transparent 70%, #a7d6ff 70%);
   padding-left: 8px;
-  margin: 24px 56px 12px;
   font-size: 20px;
   font-weight: 500;
 }
