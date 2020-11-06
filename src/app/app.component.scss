@@ -32,17 +32,32 @@ header {
 }
 
 p {
+  font-size: 18px;
   letter-spacing: 0.8px;
+  padding-bottom: 16px;
 }
 
 .tytle_two {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 1000;
+  line-height: 25px;
+  display: block;
+  width: 80%;
 }
 .tytle_three {
   font-size: 48px;
   font-weight: 1000;
   color: #2b470e;
+}
+.tytle_four {
+  background: linear-gradient(transparent 70%, #a7d6ff 70%);
+  padding-left: 8px;
+  margin: 24px auto 10px auto;
+  font-size: 24px;
+  font-weight: 500;
+  display: block;
+  width: 100%;
+
 }
 .button_area {
   text-align: center;
@@ -103,7 +118,7 @@ p {
     position: absolute;
     content: "";
     display: block;
-    background: #ffc107;
+    background: #ffb6c1;
     top: 0.43em;
     left: 0.5em;
     height: 11px;
@@ -129,6 +144,15 @@ p {
     line-height: 1.5;
     padding: 0.5em;
     list-style-type: none !important;
+  }
+  .sub_tytle{
+    text-align: center;
+    color: #0080ff;
+    margin-top: -18px;
+    margin-bottom: 16px;
+  }
+  img.slice_jpg{
+    width: auto;
   }
 }
 
@@ -395,7 +419,8 @@ p {
 
 .text_content {
   padding: 16px 32px;
-  margin-bottom: 16px;
+  margin:0px 8px 16px;
+  font-size: 18px;
   font-stretch: semi-expanded;
   letter-spacing: 4px;
   line-height: 32px;
@@ -418,6 +443,10 @@ p {
   }
   p {
     line-height: 32px;
+    font-size: 18px;
+  }
+  .image-area{
+    text-align: center;
   }
 }
 
@@ -507,6 +536,7 @@ blockquote {
   display: block;
   width: 100%;
   padding-right: 8px;
+  margin:4px auto;
 }
 .slip_article_text {
   display: block;
@@ -532,6 +562,7 @@ blockquote {
   .image-area {
     img {
       width: 240px;
+      text-align: center;
     }
   }
 }

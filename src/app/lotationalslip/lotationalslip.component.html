@@ -30,8 +30,17 @@
                         <li>スライス法</li>
                     </ul>
                 <li>計算するだけじゃあありません</li>
-                <li>鳥を飛ばしたかった！？three.jsってなに</li>
-                <li>easy</li>
+                <ul class="sub_list">
+                    <li class="subli">鳥を飛ばしたかった！？three.jsってなに?</li>
+                    <li>three.jsとは</li>
+                    <li>０からのスタート</li>
+                </ul>
+                <li>無限にあるwebサイト。でも作り方って知ってますか？</li>
+                <ul class="sub_list">
+                    <li>箱がたくさん…勝手に動かないで！</li>
+                    <li>彩りましょう、cssで</li>
+                    <li>もっといろいろなサイトを覗かなくては</li>
+                </ul>
             </ul>
             </div>
             <p>それでは早速見ていきましょう！</p>
@@ -42,11 +51,11 @@
 
 <div class="content">
     <div class="content-inner">
-        <h2>How to</h2>
-        <p>使用説明</p>
+        <h2><a id="con_ro">How to</a></h2>
+        <div class="sub_tytle">仕様説明</div>
         <div class="content_topic">
             <blockquote class="quote-topic me-0">
-                <p class="tytle_two">いったい何を計算しているんだ？</p>
+                <p class="con_ro">いったい何を計算しているんだ？</p>
             </blockquote>
         <div class="text_content">
             <p>「日本の山と言ったら？」多くの人が富士山と答えるのではないでしょうか。<br>
@@ -63,13 +72,29 @@
                 こちらのアプリは、指定された条件の斜面に対して、最も危険な状態となる円弧滑り面とその安全率を計算し、斜面が安定しているのか否かを判定するアプリになっています。<br></p>
         </div>
         <blockquote class="quote-blue me-0">
-            <p class="tytle_two">とりあえず使ってみよう！</p>
+            <a class="#con_how">とりあえず使ってみよう！</a>
         </blockquote>
         <div class="text_content">
-            <p class="content_direction">
-                こちらのアプリでは、指定された条件の斜面に対して、最も危険な状態となる円弧滑り面とその安全率を返します。最も危険な状態となる円弧滑り面の調べ方については、以下の手順により計算します。
+            <p>さあ、早速サイトを開いてアプリを使ってみます！<br>
+                「斜面の水平長さ」「斜面の水平高さ」「土の粘着力」「土の摩擦角」「土の単位体積重量」をそれぞれ入力する欄がありますから、見てみたい適当な数値を入力するだけで準備はOK！
+                早速計算開始ボタンを押してみましょう！  
+            </p>
+            <div class="image-area">
+                <img src="../../assets/img/guide_user.png"  class="slip_img" width=220px>
+            </div>
+            <p>
+                数値を変えると様々なシチュエーションで斜面が壊れるかどうかを調べることができます。<br>
+                ちなみに、ここに「土の粘着力」という欄がありますよね？砂の粘着力はおおよそ５kN/m²と言われていますので、そのあたりの値を入力してあげると、ニュースで見る土砂崩れのようなアニメーションが流れます！<br>
+                値を大きくしたり、小さくしたりして実験してみてください！
+
             </p>
         </div>
+    </div>
+</div>
+<div class="content">
+    <div class="content-inner">
+        <h2><a name="con_cal">Calculation</a></h2>
+        <div class="sub_tytle">演算方法</div>
         <div class="content_topic">
             <blockquote class="quote-blue me-0">
                 <p class="tytle_two">ちょっと難しい話。どんな計算がされているんだろう</p>
@@ -79,7 +104,7 @@
                     では、ここからが本題です。このアプリ、値を指定してくれると<strong>「自動で」</strong>安全率や半径を教えてくれますよね。<br>
                     でもこの<strong>「自動」</strong>、実は非常にやっかいで、一見自動に見えるものでも、やはりどこかで人が定義をしてあげないといとプログラムは作動してくれません。</p>
                 <p>この章では、実際に裏側でどんな計算がされているのかを説明していきます。<br>
-                    <strong>「うっ、計算…」</strong>という気持ち、とてもわかります！！<br>でも実は、この後にもっと複雑計算が残っているんですよねー。
+                    <strong>「うっ、計算…」</strong>という気持ち、とてもわかります！！<br>でも実は、この後にもっと複雑なお話が残っているんですよねー。
                 </p>
             </div>
             <div class="content_topic">
@@ -90,7 +115,7 @@
             <div class="article_slip">
                 <p>斜面の安定は、次の手順で計算をしていきます。</p>
                 <div class="image-area">
-                    <img src="../../assets/img/slip_article_first.png"  class="slip_img" width=220px>
+                    <img src="../../assets/img/circle_image_f.png"  class="slip_img" width=220px>
                 </div>
                 <ol class="slip_article_text">
                     <li>斜面より上のある座標（x＝L/2、ｙ＝H）を中心とし、ある半径をとる円弧滑り面の安全率を計算します。円弧滑り面の安全率計算では、スライス法に基づき円の面積をx方向に5分割し、それぞれの要素について滑り荷重と滑り抵抗を算出し、それぞれ合算した値の商を求めることで算出します。</li>
@@ -101,7 +126,7 @@
         <div class="text_content">
             <div class="article_slip">
                 <div class="image-area">
-                    <img src="../../assets/img/slip_article_second.png"  class="slip_img" width=220px>
+                    <img src="../../assets/img/circle_image_s.png"  class="slip_img" width=220px>
                 </div>
                 <ol class="slip_article_text" start="3">
                     <li>円弧滑り面の中心として選ばれているある座標の上下左右それぞれ１m離れた4点についても➁の計算を行います。そして、5つの異なる中心座標における最小安全率を比較して、最も小さい最小安全率を出した中心座標を選びます。</li>
@@ -144,9 +169,11 @@
                 <div class="image-area">
                     <img src="../../assets/img/slice.png"  class="slip_img" width=80%>
                 </div>
-            <p class="content_direction">右からi番目のブロックについて、安全率は以下の通りに求められます。<br>
-                <p class="emphasis">F_s=(∑_(i=1)^n▒〖w_i  cos⁡〖α_i 〗  tan⁡〖φ_i 〗+c_i l_i 〗)/(∑_(i=1)^n▒〖W_i  sin⁡〖α_i 〗 〗)</p>
-                　ただし、c_i：土の粘着力、φ_i：土の摩擦角<br>
+            <p class="content_direction">右からi番目のブロックについて、安全率は以下の通りに求められます。</p>
+            <div class="image-area">
+                <img src="../../assets/img/sweden_form.png"  class="slip_img" >
+            </div>
+            <p class="content_direction">
                 　この式に従って、スウェーデン法では斜面の安定が解析できます。このアプリは、上記の考え方を基に<strong>python</strong>を用いて安全率を計算し、最も安全率が低く危険な斜面を計算しております。
         </div>
     </div>
@@ -154,11 +181,11 @@
 
 <div class="content">
     <div class="content-inner">
-        <h2>How to</h2>
-        <p>使用説明</p>
+        <h2><a name="con_pro_ky">Produce</a></h2>
+        <div class="sub_tytle">制作記録</div>
         <div class="content_topic">
             <blockquote class="quote-blue me-0">
-                <p class="tytle_two">鳥を飛ばしたかった！？three.jsってなに</p>
+                <p class="tytle_two">鳥を飛ばしたかった！？three.jsってなに？</p>
             </blockquote>
         </div>
         <div class="text_content">
@@ -173,50 +200,48 @@
         </div>
         <div class="content_topic">
             <div class="content_topic">
-                <p class="tytle_four">three.js</p>
+                <p class="tytle_four">three.jsとは</p>
         　　</div>
         </div>
         <div class="text_content">
-            <p class="content_direction">
-                まずは、今回使用したthree.jsについて簡単に説明していきたいと思います！
-                「three.js」とは、手軽に3D世界を作り出すことが可能で、重力などの再現できるため、現代ではゲームなどにも採用されており、多くのサイト等で使用されています！
-                今回実際に作業したことは円弧すべりを表示する図形などを中心に制作していました。例えば、計算した後に表示される土を想定した球体の図形や丘を想定したものなどを作成しました。それらの図形を作る上で、数学的な考え方から円弧の座標など求め、three.jsにその命令としてコードを書くことを中心として作業を行いました。それに加えて、笹澤さん達に教わりながらも、今回作った世界に重力や土同士の(球体同士)の摩擦力や弾性力を与えたりして、より現実に近いような再現を行ったり、ペアプログラミングの形態を取ったりして、今回の円弧すべりのアプリの作成を行いました。
-            </p>
+            <p>まずは、今回使用したthree.jsについて簡単に説明していきたいと思います！</p>
+            <p>「three.js」は、<strong>手軽に3D世界を作り出すことが可能で、重力などの再現できる</strong>ため、現代ではゲームなどにも採用されており、多くのサイトで使用されています！</p>
+            <p>今回実際に作業したことは、円弧すべりを表示する図形の制作です。例えば、計算した後に表示される土を想定した球体の図形や丘を想定したものなどを作成しました。<br>
+                それらの図形を作る上で、数学的な考え方から円弧の座標など求め、three.jsにその命令としてコードを書くことを中心として作業を行いました。<br>
+                それに加え、笹澤さん達に教わりながら、今回作った世界に重力や土同士の(球体同士)の摩擦力や弾性力を与えたりして、より現実に近いような再現を模索し、今回の円弧すべりのアプリの作成を行いました。</p>
+        </div>
+        <div class="content_topic">
+            <p class="tytle_four">０からのスタート</p>
+    　　</div>
+        <div class="text_content">
+            <p> 今回の円弧滑りのアプリ開発をするにあたって、自分は全くと言っていいほどプログラミングについて知らない状態からはじめました。<br>
+                最初は何をしていいかわからず、どんなふうに書いていくのかもわからなかった状態で、とても苦労しました。<br>
+                しかし、three.jsについていろんなことを調べたり、周りにいるメンバーや笹澤さんに聞いたりしていくうちに、少しずつではあったがわかるようになっていき、図形などの表示できるようになっていきました。<br>
+                今回全体を通して思ったことは、はじめは大変だったけど、だんだんやっていくうちに楽しくなっていき、完成したときの喜びが貴重な体験をすることに繋げられることが出来ました。<br>
+                これからも少しずつプログラミング部の企画を通して、様々なことを経験していきたいです。<br>
         </div>
     </div>
 </div>
 <div class="content">
     <div class="content-inner">
-        <h2>Record</h2>
-        <p>制作記録</p>
+        <h2><a name="con_pro_ky">Produce</a></h2>
+        <div class="sub_tytle">制作記録</div>
+        <div class="content_topic">
+        </div>
         <div class="content_topic">
             <blockquote class="quote-blue me-0">
-                <p class="tytle_two">吉川</p>
+                <p class="tytle_two">無限にあるwebサイト。でも作り方って知ってますか？</p>
             </blockquote>
         </div>
         <div class="text_content">
-            <p class="content_direction">
-                今回の円弧滑りのアプリ開発をするにあたって、自分は全くと言っていいほどプログラミングについて知らない状態からはじめました。<br>
-                また、今回のアプリ開発では、「three.js」を使用して円弧すべりを表示する図形などを書いていきました。それを進める過程で、土の仮定した球体や丘を想定した線など、色々図形を作成していきました。<br>
-                初めにも書いたとおり、自分はプログラミングでさえ知らないような人だったので、最初は何をしていいかわからず、どんなふうに書いていくのかもわからなかった状態で、とても苦労しました。<br>
-                しかし、three.jsについていろんなことを調べたり、周りにいるメンバーや笹澤さんに聞いたりしていくうちに、少しずつではあったがわかるようになっていき、図形などの表示できるようになっていきました。<br>
-                今回全体を通して思ったことは、はじめは大変だったけど、だんだんやっていくうちに楽しくなっていき、完成したときの喜びが貴重な体験をすることに繋げられることが出来ました。<br>
-                これからも少しずつプログラミング部の企画を通して、様々なことを経験していきたいと感じました。<br>
-                吉川和宏
-            </p>
-        </div>
-    </div>
-    <div class="content-inner">
-        <div class="content_topic">
-            <blockquote class="quote-blue me-0">
-                <p class="tytle_two">吉川</p>
-            </blockquote>
+            <p>私たちの生活にスマートフォンは欠かせないものになっています。必然的にスマホでブラウザを見る機会も以前より増えましたよね。<br>
+            しかし、一口にスマホといっても、様々な大きさがあります。掌で収まるもの、少し手のひらより大きいもの、タブレットも多くの人が持っています。<br>
+            けれど、日本人の大多数は、そのサイトがどのように成り立っているのかを知りません。僕もその一人でした。</p>
         </div>
         <div class="text_content">
-            <p class="content_direction">
-                見様見真似で始まり、円弧滑りアプリのデザインと、このサイトの作成を行いました。<br>
-                
-            </p>
+            <p>私たちの生活にスマートフォンは欠かせないものになっています。必然的にスマホでブラウザを見る機会も以前より増えましたよね。<br>
+            しかし、一口にスマホといっても、様々な大きさがあります。掌で収まるもの、少し手のひらより大きいもの、タブレットも多くの人が持っています。</p>
+            けれど、日本人の大多数は、そのサイトがどのように成り立っているのかを知りません。僕もその一人でした。
         </div>
     </div>
 </div>
