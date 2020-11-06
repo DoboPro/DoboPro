@@ -153,6 +153,21 @@ p {
   img.slice_jpg{
     width: auto;
   }
+  .menuTitle{
+    font-size: calc(2.571em + 26 * (100vw - 375px) / 1305);
+    letter-spacing: 0.06em;
+    line-height: 2.09;
+    text-align: center;
+    color: #191970;
+    font-weight: 900;
+  }
+  .jaTitle{
+    font-size: 48px;
+    text-align: center;
+    color: #0080ff;
+    margin-top: -18px;
+    margin-bottom: 16px;
+  }
 }
 
 .explain img{
