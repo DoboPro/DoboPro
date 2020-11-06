@@ -133,7 +133,13 @@ p {
 }
 
 .explain img{
+  width: 50%;
+}
+
+@media screen and (max-width:767px){
+.explain img{
   width: 100%;
+}
 }
 
 .content.menu{
