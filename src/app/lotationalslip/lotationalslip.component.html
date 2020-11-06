@@ -1,13 +1,8 @@
-<div class="text_face" id="slip">
-    <h1>斜面の安定計算</h1>
-</div>
 
 <div class="content">
     <div class="content-inner">
-        <div class="tytle">
-            <h2>Contents</h2>
-            <p>目次</p>            
-        </div>
+        <h2><a id="con_ro">RotationalSlip</a></h2>
+        <div class="sub_tytle">斜面の安定計算</div>
         <div class="content_topic">
             <blockquote class="quote-topic me-0">
                 <p class="tytle_two">はじめまして</p>
@@ -55,7 +50,7 @@
         <div class="sub_tytle">仕様説明</div>
         <div class="content_topic">
             <blockquote class="quote-topic me-0">
-                <p class="con_ro">いったい何を計算しているんだ？</p>
+                <p class="tytle_two">いったい何を計算しているんだ？</p>
             </blockquote>
         <div class="text_content">
             <p>「日本の山と言ったら？」多くの人が富士山と答えるのではないでしょうか。<br>
@@ -72,7 +67,7 @@
                 こちらのアプリは、指定された条件の斜面に対して、最も危険な状態となる円弧滑り面とその安全率を計算し、斜面が安定しているのか否かを判定するアプリになっています。<br></p>
         </div>
         <blockquote class="quote-blue me-0">
-            <a class="#con_how">とりあえず使ってみよう！</a>
+            <p class="tytle_two">とりあえず使ってみよう！</p>
         </blockquote>
         <div class="text_content">
             <p>さあ、早速サイトを開いてアプリを使ってみます！<br>
@@ -115,7 +110,7 @@
             <div class="article_slip">
                 <p>斜面の安定は、次の手順で計算をしていきます。</p>
                 <div class="image-area">
-                    <img src="../../assets/img/circle_image_f.png"  class="slip_img" width=220px>
+                    <img src="../../assets/img/slip_article_first.png"  class="slip_img" width=220px>
                 </div>
                 <ol class="slip_article_text">
                     <li>斜面より上のある座標（x＝L/2、ｙ＝H）を中心とし、ある半径をとる円弧滑り面の安全率を計算します。円弧滑り面の安全率計算では、スライス法に基づき円の面積をx方向に5分割し、それぞれの要素について滑り荷重と滑り抵抗を算出し、それぞれ合算した値の商を求めることで算出します。</li>
@@ -126,7 +121,7 @@
         <div class="text_content">
             <div class="article_slip">
                 <div class="image-area">
-                    <img src="../../assets/img/circle_image_s.png"  class="slip_img" width=220px>
+                    <img src="../../assets/img/slip_article_second.png"  class="slip_img" width=220px>
                 </div>
                 <ol class="slip_article_text" start="3">
                     <li>円弧滑り面の中心として選ばれているある座標の上下左右それぞれ１m離れた4点についても➁の計算を行います。そして、5つの異なる中心座標における最小安全率を比較して、最も小さい最小安全率を出した中心座標を選びます。</li>
@@ -236,12 +231,37 @@
         <div class="text_content">
             <p>私たちの生活にスマートフォンは欠かせないものになっています。必然的にスマホでブラウザを見る機会も以前より増えましたよね。<br>
             しかし、一口にスマホといっても、様々な大きさがあります。掌で収まるもの、少し手のひらより大きいもの、タブレットも多くの人が持っています。<br>
-            けれど、日本人の大多数は、そのサイトがどのように成り立っているのかを知りません。僕もその一人でした。</p>
+            けれど、日本人の大多数は、そのサイトがどのように作られているのかを知りません。つい先日まで僕もその一人でした。</p>
+            <p>記事の最後に、少しだけ今回学んだことの整理をしたいと思います。</p>
+        </div>
+        <div class="content_topic">
+            <p class="tytle_four">入れ物がたくさん…勝手に動かないで！</p>
         </div>
         <div class="text_content">
-            <p>私たちの生活にスマートフォンは欠かせないものになっています。必然的にスマホでブラウザを見る機会も以前より増えましたよね。<br>
-            しかし、一口にスマホといっても、様々な大きさがあります。掌で収まるもの、少し手のひらより大きいもの、タブレットも多くの人が持っています。</p>
-            けれど、日本人の大多数は、そのサイトがどのように成り立っているのかを知りません。僕もその一人でした。
+            <p>WEBサイトは、htmlに<strong>div</strong>という入れ物の場所を指定してあげることで成り立っています。</p>
+            <p>このdivは、それぞれに<strong>class="苗字"</strong>という形で入れ物に苗字をつけてあげることができます。<br>
+            divの中にdivを設置することができるのですが、その際に、divがどこの中にいるかで親―子の関係が必ず成り立ちます。親の好き嫌いが子供にも遺伝したものだと思ってください。</p>
+            <p>このようにして、入れ物の中に入れ物を配置することで、WEBサイトはデザインされています。<br>
+            ただし、無数にあるスマホやパソコンのサイズに合わせて、その都度入れ物がどこにいなければならないのか指定しなければなりませんし、<br>
+            何も指定しないと、divたちは下に下にと並んでしまうので、横に並んだり、画面に合わせて幅を変えたりという指定をする必要があります。</p>
+        </div>
+        <div class="content_topic">
+             <p class="tytle_four">cssで人格形成</p>
+        </div>
+        <div class="text_content">
+            <p>さて、入れ物がたくさんできたわけですが、このままだと無機質なサイトになってしまいます。それを防ぐために</p>
+        </div>
+        <div class="content_topic">
+            <p class="tytle_four">div達もソーシャルディスタンス</p>
+       </div>
+       <div class="text_content">
+           <p>さて、入れ物がたくさんできたわけですが、このままだと無機質なサイトになってしまいます。それを防ぐために</p>
+       </div>
+        <div class="content_topic">
+            <p class="tytle_four">もっといろいろなサイトを覗かなくては！</p>
+        </div>
+        <div class="text_content">
+            <p>私たちの</p>
         </div>
     </div>
 </div>
