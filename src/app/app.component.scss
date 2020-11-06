@@ -8,7 +8,7 @@ header {
   text-align: center;
   font-size: 20px;
   margin: 0;
-  padding: 8px;
+  padding: 16px;
   box-shadow: 0px 0px 12px 0px #2b5540;
   a {
     display: inline-block;
@@ -17,6 +17,9 @@ header {
     border-bottom: solid 1px #191970;
     text-decoration: none;
     color: #005500;
+  }
+  img{
+    width: 250px;
   }
   h1 {
     text-align: center;
@@ -129,10 +132,14 @@ p {
   }
 }
 
+.explain img{
+  width: 100%;
+}
+
 .content.menu{
   background-color:#000099;
   .content-inner{
-    padding: 16px;
+    padding: 8px;
   }
   ul{
     display:flex;
@@ -145,13 +152,13 @@ p {
       border-right:1px solid #fff;
       text-align:center;
       .menuTitle{
-        font-size: calc(0.571em + 26 * (100vw - 375px) / 1305);
+        font-size: calc(0.0571em + 26 * (100vw - 375px) / 1305);
         font-weight: 500;
       }
       color:#fff;
       .jaTitle{
         display: block;
-        font-size: calc(0.001em + 23 * (100vw - 375px) / 1305);
+        font-size: calc(0.001em + 10 * (100vw - 375px) / 1305);
       }
       i{
         display: block;
