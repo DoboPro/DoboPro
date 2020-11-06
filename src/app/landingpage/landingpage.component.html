@@ -1,14 +1,63 @@
+<div class="content menu">
+    <div class="content-inner">
+        <ul>
+            <li>
+                <a href="#direction">
+                    <span class="menuTitle">Direction</span>
+                    <span class="jaTitle">活動方針</span>
+                    <i class="fas fa-caret-down"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#project">
+                    <span class="menuTitle">Project</span>
+                    <span class="jaTitle">プロジェクト</span>
+                    <i class="fas fa-caret-down"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#gallery">
+                    <span class="menuTitle">Gallery</span>
+                    <span class="jaTitle">ギャラリー</span>
+                    <i class="fas fa-caret-down"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#team">
+                    <span class="menuTitle">Team</span>
+                    <span class="jaTitle">チーム紹介</span>
+                    <i class="fas fa-caret-down"></i>
+                </a>
+            </li>
+            <li><a href="#member">
+                    <span class="menuTitle">Member</span>
+                    <span class="jaTitle">メンバー</span>
+                    <i class="fas fa-caret-down"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#contact">
+                    <span class="menuTitle">Contact</span>
+                    <span class="jaTitle">お問い合わせ</span>
+                    <i class="fas fa-caret-down"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
 <div class="content first">
     <div class="content-inner">
         <p class="content-innerinner">
-            ポケットサイズから始まる新しいドボクを
+            ポケットサイズから始まる<span style="display: inline-block;">新しいドボクを</span>
         </p>
     </div>
 </div>
 
 <div class="content">
     <div class="content-inner">
-        <h2>Direction</h2>
+        <h2 id="direction">Direction</h2>
         <p>活動方針</p>
         <div class="content_topic">
             <blockquote class="quote-orange me-0">
@@ -61,7 +110,7 @@
 
 <div class="content appintro">
     <div class="content-inner">
-        <h2>Project</h2>
+        <h2 id="project">Project</h2>
         <p>プロジェクト</p>
         <div class="card left wow fadeInUp pj" data-wow-duration="1.3s" data-wow-delay="0.3s"
             style="visibility: visible; animation-duration: 1.3s; animation-delay: 0.3s; animation-name: fadeInUp;">
@@ -78,7 +127,7 @@
                     <p>構造物にL2地震動（非常に強い地震動）が発生した場合、液状化が発生するか判定したものになります。判定には土の繰り返し三軸圧縮試験によって液状化強度比Rと繰返し回数Ncの関係を計測している必要があります。
                     </p>
                     <div class="button_area">
-                        <a class="button_1" routerLink='/'>特設ページへ</a>
+                        <a class="button_1" routerLink='../liq'>特設ページへ</a>
                     </div>
                 </div>
             </div>
@@ -100,7 +149,7 @@
                     <p>斜面の形状によって、安全率Fを算出し。斜面に存在する土砂がどのように滑るのか、アニメーションを用いて判定するものになります。その計算方法として、斜面が滑るときの面に生じるせん断強度Rをすべり面に作用する土のせん断荷重Lで除した数値で行っています。
                     </p>
                     <div class="button_area">
-                        <a class="button_1" routerLink='/'>特設ページへ</a>
+                        <a class="button_1" routerLink='../slip'>特設ページへ</a>
                     </div>
                 </div>
             </div>
@@ -110,9 +159,9 @@
 
 <div class="content">
     <div class="content-inner">
-        <h2>Galary</h2>
+        <h2 id="gallery">Gallery</h2>
         <p>ギャラリー</p>
-        
+
         <!-- <section class="carousel" aria-label="Gallery">
           <ol class="carousel__viewport">
             <li id="carousel__slide1"
@@ -190,8 +239,14 @@
 </div>
 <div class="content">
     <div class="content-inner">
-        <h2>Dobokulab</h2>
+        <h2 id="team">Team</h2>
         <p>チーム紹介</p>
+        <div class="explain">
+        <a href="https://doboku-lab.com/">
+        <img src="../../assets/img/dobokulab.png">
+        </a>
+            <p>我々のチームの基盤は"DobokuLab"という土木系学生団体です。DobokuLabの理念に則って活動しております。</p>
+        </div>
         <div class="content_topic">
             <blockquote class="quote-orange me-0">
                 <p class="tytle_two">土木学生の</p>
@@ -226,13 +281,14 @@
                 我々を業界形成の末端と考え、学生―土木業界間の双方向の発信を終着点とみなすのではなく、業界の末端はあくまで一般社会であることを自覚し、業種や世代にこだわらない発信を課題とします。</p>
             <p></p>
         </div>
+    
     </div>
 </div>
 
 
 <div class="content appintro">
     <div class="content-inner">
-        <h2>Member</h2>
+        <h2 id="member">Member</h2>
         <p>メンバー紹介</p>
         <div class="card left wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.3s"
             style="visibility: visible; animation-duration: 1.3s; animation-delay: 0.3s; animation-name: fadeInUp;">
@@ -268,7 +324,8 @@
                     <p>最近は様々なことに興味を持ち、「挑戦する」ということを心がけています。</p>
                     <p>未熟者ですが、今回の斜面の安定アプリ作成で使用したthree.jsについても勉強中です。</p>
                     <p>また、土木分野についても様々な知識を取り入れていきたいと思ってます！</p>
-                    <a class="twitter" href="https://twitter.com/Yoshi99605582"><i class="fab fa-twitter-square"></i></a>
+                    <a class="twitter" href="https://twitter.com/Yoshi99605582"><i
+                            class="fab fa-twitter-square"></i></a>
                 </div>
             </div>
         </div>
@@ -324,7 +381,8 @@
                 <div class="card_body">
                     <p>日本全国を旅しながら、土木/建築写真を撮影中。鉄道構造物がお気に入り。
                         HTML・CSSから逃げるな。</p>
-                    <a class="twitter" href="https://twitter.com/O2Sz4sn6YWQ9uG7"><i class="fab fa-twitter-square"></i></a>
+                    <a class="twitter" href="https://twitter.com/O2Sz4sn6YWQ9uG7"><i
+                            class="fab fa-twitter-square"></i></a>
                 </div>
             </div>
         </div>
@@ -350,5 +408,15 @@
             </div>
         </div>
 
+    </div>
+</div>
+
+<div class="content">
+    <div class="content-inner">
+        <h2 id="contact">Contact</h2>
+        <p>お問い合わせ</p>
+        <div class="button_area">
+            <a class="button_1" href="https://docs.google.com/forms/d/e/1FAIpQLSe9J9-qJiORNPNgjGvCIsZLiICKv1GvlFIRSJUnK0-Tevd74Q/viewform?usp=sf_link">お問い合わせはこちら</a>
+        </div>
     </div>
 </div>

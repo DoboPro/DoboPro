@@ -1,8 +1,14 @@
+html{
+  overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
 header {
   text-align: center;
   font-size: 20px;
   margin: 0;
-  padding: 8px;
+  padding: 16px;
   box-shadow: 0px 0px 12px 0px #2b5540;
   a {
     display: inline-block;
@@ -11,6 +17,9 @@ header {
     border-bottom: solid 1px #191970;
     text-decoration: none;
     color: #005500;
+  }
+  img{
+    width: 250px;
   }
   h1 {
     text-align: center;
@@ -71,9 +80,10 @@ p {
     font-weight: 900;
   }
   >p {
+    margin-bottom: 32px;
     text-align: center;
     letter-spacing: 1.6px;
-    font-size: calc(.071em + 26 * (100vw - 375px) / 1305);
+    font-size: calc(.5em + 26 * (100vw - 375px) / 1305);
   }
   ol {
     padding: 0 0 8px 32px;
@@ -119,6 +129,76 @@ p {
     line-height: 1.5;
     padding: 0.5em;
     list-style-type: none !important;
+  }
+}
+
+.explain img{
+  width: 100%;
+}
+
+.content.menu{
+  background-color:#000099;
+  .content-inner{
+    padding: 8px;
+  }
+  ul{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    li{
+      display: inline-block;
+      width: 300px;
+      padding:4px;
+      border-right:1px solid #fff;
+      text-align:center;
+      .menuTitle{
+        font-size: calc(0.0571em + 26 * (100vw - 375px) / 1305);
+        font-weight: 500;
+      }
+      color:#fff;
+      .jaTitle{
+        display: block;
+        font-size: calc(0.001em + 10 * (100vw - 375px) / 1305);
+      }
+      i{
+        display: block;
+      }
+      &:last-child{
+        border-right:0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:767px){
+  .content.menu{
+    background-color:#000099;
+    .content-inner{
+      padding: 8px;
+    }
+    ul{
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      li{
+        display: inline-block;
+        width: 300px;
+        padding: 12px 10px 13px;
+        border-right:1px solid #fff;
+        text-align:center;
+        .menuTitle{
+          font-size: calc(0.571em + 26 * (100vw - 375px) / 1305);
+          font-weight: 500;
+        }
+        color:#fff;
+        .jaTitle{
+          display: none;
+        }
+        &:last-child{
+          border-right:0;
+        }
+      }
+    }
   }
 }
 
@@ -358,6 +438,9 @@ blockquote.quote-topic {
 blockquote {
   background: #fff;
   border-left: 0.7rem solid #007bff;
+  // border-top:3px solid #f5f5f5;
+  // border-right:3px solid #f5f5f5;
+  // border-bottom:3px solid #f5f5f5;
   padding: 16px;
   display: block;
   .tytle_two {
@@ -399,6 +482,12 @@ blockquote {
         text-decoration: none;
       }
     }
+  }
+}
+
+.content.appintro{
+  p{
+    margin: 0;
   }
 }
 
