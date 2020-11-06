@@ -6,7 +6,7 @@
             <a href="https://dobopro.github.io/RotationalSlip">
                 <div class="appLink_inner">
                     <div class="appImg">
-                        <img src="../../assets/img/rotational_img.png">
+                        <img src="./assets/img/rotational_img.png">
                     </div>
                     <div class="explain">
                         <p>斜面の安定計算アプリ</p>
@@ -89,7 +89,7 @@
                     早速計算開始ボタンを押してみましょう！
                 </p>
                 <div class="image-area">
-                    <img src="../../assets/img/guide_user.png" class="slip_img" width=220px>
+                    <img src="./assets/img/guide_user.png" class="slip_img" width=220px>
                 </div>
                 <p>
                     数値を変えると様々なシチュエーションで斜面が壊れるかどうかを調べることができます。<br>
@@ -126,7 +126,7 @@
             <div class="article_slip">
                 <p>斜面の安定は、次の手順で計算をしていきます。</p>
                 <div class="image-area">
-                    <img src="../../assets/img/slip_article_first.png" class="slip_img" width=220px>
+                    <img src="./assets/img/slip_article_first.png" class="slip_img" width=220px>
                 </div>
                 <ol class="slip_article_text">
                     <li>斜面より上のある座標（x＝L/2、ｙ＝H）を中心とし、ある半径をとる円弧滑り面の安全率を計算します。円弧滑り面の安全率計算では、スライス法に基づき円の面積をx方向に5分割し、それぞれの要素について滑り荷重と滑り抵抗を算出し、それぞれ合算した値の商を求めることで算出します。
@@ -139,7 +139,7 @@
         <div class="text_content">
             <div class="article_slip">
                 <div class="image-area">
-                    <img src="../../assets/img/slip_article_second.png" class="slip_img" width=220px>
+                    <img src="./assets/img/slip_article_second.png" class="slip_img" width=220px>
                 </div>
                 <ol class="slip_article_text" start="3">
                     <li>円弧滑り面の中心として選ばれているある座標の上下左右それぞれ１m離れた4点についても➁の計算を行います。そして、5つの異なる中心座標における最小安全率を比較して、最も小さい最小安全率を出した中心座標を選びます。
@@ -168,7 +168,7 @@
                 今回のアプリでは、➀については円弧滑り面を仮定して、➁についてはスライス法を用いております。この手法はスウェーデン法と呼ばれております。円弧滑り面とは、下の図のように斜面近くのある点を中心とする円を描き、斜面と重なる弧を滑り面として検討する方法です。より計算が単純な、斜面と平行な滑り面を仮定する直線すべり面と比べて深い場所に対する検討に適しています
             </p>
             <div class="image-area">
-                <img src="../../assets/img/slip_radius.png" class="slip_img">
+                <img src="./assets/img/slip_radius.png" class="slip_img">
             </div>
         </div>
         <div class="content_topic">
@@ -191,11 +191,11 @@
                 今回のアプリでは、➀については円弧滑り面を仮定して、➁についてはスライス法を用いております。この手法はスウェーデン法と呼ばれております。円弧滑り面とは、下の図のように斜面近くのある点を中心とする円を描き、斜面と重なる弧を滑り面として検討する方法です。より計算が単純な、斜面と平行な滑り面を仮定する直線すべり面と比べて深い場所に対する検討に適しています。
             </p>
             <div class="image-area">
-                <img src="../../assets/img/slice.png" class="slip_img" width=80%>
+                <img src="./assets/img/slice.png" class="slip_img" width=80%>
             </div>
             <p class="content_direction">右からi番目のブロックについて、安全率は以下の通りに求められます。</p>
             <div class="image-area">
-                <img src="../../assets/img/sweden_form.png" class="slip_img">
+                <img src="./assets/img/sweden_form.png" class="slip_img">
             </div>
             <p class="content_direction">
                 　この式に従って、スウェーデン法では斜面の安定が解析できます。このアプリは、上記の考え方を基に<strong>python</strong>を用いて安全率を計算し、最も安全率が低く危険な斜面を計算しております。
