@@ -155,6 +155,9 @@ p {
 
 .explain {
   text-align: center;
+  &.rule{
+    text-align: left;
+  }
   img {
     width: 68%;
   }
@@ -194,13 +197,13 @@ p {
       border-right: 1px solid #fff;
       text-align: center;
       .menuTitle {
-        font-size: calc(0.0571em + 26 * (100vw - 375px) / 1305);
+        font-size: 24px;
         font-weight: 500;
       }
       color: #fff;
       .jaTitle {
         display: block;
-        font-size: calc(0.001em + 10 * (100vw - 375px) / 1305);
+        font-size: 16px;
       }
       i {
         display: block;
